@@ -26,7 +26,7 @@ public class GuiCadastroFilmes extends JFrame{
 
     public void inicializarComponetes() {
 
-        setLayout (new FlowLayout(FlowLayout.LEFT);
+        setLayout (new FlowLayout(FlowLayout.LEFT));
         setTitle("Cadastramento de Filmes");
         setBounds(200,100,650,120);
 
@@ -223,5 +223,14 @@ public class GuiCadastroFilmes extends JFrame{
             limparCampos();
         }
     }
-    
+
+    public void setBotoes(boolean bNovo, boolean bLocalizar, boolean bGravar,
+                          boolean bAlterar, boolean bExcluir, boolean bCancelar){
+        btNovo.setEnabled(bNovo);
+        btLocalizar.setEnabled(bLocalizar);
+        btGravar.setEnabled(bGravar);
+        btAlterar.setEnabled(bAlterar);
+        btExcluir.setEnabled(bExcluir);
+        btCancelar.setEnabled(bCancelar);
+    }
 }

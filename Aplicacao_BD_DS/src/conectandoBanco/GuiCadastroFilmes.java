@@ -95,7 +95,7 @@ public class GuiCadastroFilmes extends JFrame{
         btSair.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Filmes.bd.close();
+                filmes.bd.close();
                 System.exit(0);
             }
         }

@@ -20,8 +20,10 @@ public class BD {
             return true;
         } catch (ClassNotFoundException e) {
             System.out.println("Driver não encontrado" + e.toString());;
+            return false;
         } catch (SQLException e) {
             System.out.println("Falha ao conectar" + e.toString());
+            return false;
         }
     }
     public void close(){

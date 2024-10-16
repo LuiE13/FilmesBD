@@ -7,7 +7,7 @@ public class Conecta {
         final String URL = "jdbc:,mysql://localhost:3306/mysql";
         try {
             Class.forName(DRIVER);
-            Connection connection = DriverManager.getConnection(URL, "root", "123456");
+            Connection connection = DriverManager.getConnection(URL, "root", "");
             JOptionPane.showMessageDialog(null, "Conexão realizada com sucesso");
             connection.close();
         } catch (ClassNotFoundException erro) {

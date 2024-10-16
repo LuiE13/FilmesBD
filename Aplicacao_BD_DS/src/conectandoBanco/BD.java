@@ -6,7 +6,7 @@ public class BD {
     private final String DBNAME = "banco";
     private final String URL = "jdbc:mysql://localhost:3306/banco";
     private final String LOGIN = "root";
-    private final String SENHA = "123456";
+    private final String SENHA = "";
     /*
     metodo que faz conexao com o banco de dados retorna true
     houve sucesso, ou false em caso negativo

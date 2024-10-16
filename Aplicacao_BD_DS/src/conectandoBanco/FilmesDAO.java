@@ -20,7 +20,7 @@ public class FilmesDAO {
         sql = "select * from films qhere codigp = ?";
 
     try{
-        statement = bd.connection.prepareStament(sql);
+        statement = bd.connection.prepareStatement(sql);
         statement.setString(1, filme.getCodigo());
         resultSet = statement.executeQuery();
         resultSet.next();
